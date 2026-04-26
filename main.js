@@ -1,10 +1,47 @@
 const yearTarget = document.getElementById("year");
+const body = document.body;
+
+body.classList.add("js-ready");
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
 
 const copyToast = document.getElementById("copy-toast");
+const navToggle = document.querySelector(".nav-toggle");
+const headerPanel = document.getElementById("header-panel");
+
+const setNavOpen = (isOpen) => {
+  body.classList.toggle("nav-open", isOpen);
+
+  if (navToggle) {
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  }
+};
+
+if (navToggle && headerPanel) {
+  navToggle.addEventListener("click", () => {
+    setNavOpen(!body.classList.contains("nav-open"));
+  });
+
+  headerPanel.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      setNavOpen(false);
+    });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setNavOpen(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) {
+      setNavOpen(false);
+    }
+  });
+}
 
 const revealItems = document.querySelectorAll(".reveal");
 
@@ -70,7 +107,7 @@ if (form && note) {
       return;
     }
 
-    note.textContent = "Спасибо! Заявка сохранена в демо-форме. Перед публикацией подключим отправку в почту или CRM.";
+    note.textContent = "Спасибо! Данные формы заполнены. Для быстрой связи можно также написать в TG, MAX, на почту или позвонить.";
     note.classList.add("is-success");
     form.reset();
   });
