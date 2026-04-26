@@ -26,34 +26,48 @@
         <img class="brand__logo" src="1.jpg" alt="Логотип ГидроКонтур">
       </a>
 
-      <nav class="site-nav" aria-label="Основная навигация">
-        <a href="#services">Услуги</a>
-        <a href="#pricing">Прайс</a>
-        <a href="#process">Этапы</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
+      <a class="header-quick-call" href="tel:+79531781121">Звонок</a>
 
-      <div class="header-actions">
-        <a class="header-phone" href="tel:+79531781121">+7 953 178-11-21</a>
-        <div class="header-links" aria-label="Быстрые способы связи">
-          <a class="header-link-button" href="https://t.me/relaining_pro" target="_blank" rel="noreferrer" aria-label="Перейти в Telegram">
-            TG
-          </a>
-          <a
-            class="header-link-button"
-            href="https://web.max.ru/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Открыть MAX и скопировать номер"
-            data-max-link
-            data-copy-text="+7 953 178-11-21"
-          >
-            MAX
-          </a>
-          <a class="header-link-button" href="mailto:relining@alex95.ru" aria-label="Написать письмо">
-            Почта
-          </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="header-panel">
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="nav-toggle__label">Меню</span>
+      </button>
+
+      <div class="header-panel" id="header-panel">
+        <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+          <a href="#services">Услуги</a>
+          <a href="#methods">Методы</a>
+          <a href="#pricing">Прайс</a>
+          <a href="#process">Этапы</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-phone" href="tel:+79531781121">+7 953 178-11-21</a>
+          <div class="header-links" aria-label="Быстрые способы связи">
+            <a class="header-link-button" href="https://t.me/relaining_pro" target="_blank" rel="noreferrer" aria-label="Перейти в Telegram">
+              TG
+            </a>
+            <a
+              class="header-link-button"
+              href="https://web.max.ru/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Открыть MAX и скопировать номер"
+              data-max-link
+              data-copy-text="+7 953 178-11-21"
+            >
+              MAX
+            </a>
+            <a class="header-link-button" href="mailto:relining@alex95.ru" aria-label="Написать письмо">
+              Почта
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -123,7 +137,7 @@
       <div class="container facts-grid reveal">
         <article class="fact-card">
           <span class="fact-card__value">4</span>
-          <p>ключевые услуги вынесены в прозрачный прайс без лишних “договорных” формулировок</p>
+          <p>основных направления работ: диагностика, прочистка, замена и монтаж трубопроводов</p>
         </article>
         <article class="fact-card">
           <span class="fact-card__value">1</span>
@@ -131,11 +145,11 @@
         </article>
         <article class="fact-card">
           <span class="fact-card__value">24/7</span>
-          <p>можно оставить заявку в любое время и вернуться к расчету в рабочий день</p>
+          <p>можно оставить заявку в любое время удобным способом: по телефону, в TG, MAX, по почте или на сайте</p>
         </article>
         <article class="fact-card">
-          <span class="fact-card__value">0</span>
-          <p>скрытых блоков и перегруженного SEO-мусора: только продающая структура и полезный контент</p>
+          <span class="fact-card__value">СПб</span>
+          <p>работаем по Санкт-Петербургу и Ленинградской области с выездом на частные и коммерческие объекты</p>
         </article>
       </div>
     </section>
@@ -146,8 +160,8 @@
           <span class="section-chip">Услуги</span>
           <h2>Что мы делаем на объекте</h2>
           <p>
-            Сайт собран так, чтобы клиент сразу понял перечень работ, ориентир по бюджету
-            и следующий шаг без долгих поисков по разделам.
+            Выполняем инженерные работы по водоснабжению и канализации для частных,
+            коммерческих и подрядных объектов.
           </p>
         </div>
 
@@ -212,14 +226,85 @@
       </div>
     </section>
 
+    <section class="section section--tinted" id="methods">
+      <div class="container">
+        <div class="section-heading section-heading--wide reveal">
+          <span class="section-chip">Методы работ</span>
+          <h2>Какими способами выполняем диагностику, замену и восстановление трубопроводов</h2>
+          <p>
+            Подбираем метод под состояние сети, доступ к участку и задачу на объекте.
+            Если можно обойтись без лишних вскрытий и повторных работ, закладываем это уже на этапе решения.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <article class="service-card method-card reveal">
+            <span class="method-card__eyebrow">Метод 01</span>
+            <h3>Бестраншейная замена трубопроводов канализации и водоснабжения</h3>
+            <p>
+              Используем, когда участок можно обновить без сплошной траншеи. Такой подход помогает
+              сократить объем земляных работ, меньше затрагивать покрытие, благоустройство и действующие коммуникации.
+            </p>
+            <ul class="method-points">
+              <li>минимум вскрытий по трассе</li>
+              <li>подходит для плотной городской застройки</li>
+              <li>решение подбирается под материал, диаметр и конфигурацию существующей линии</li>
+            </ul>
+          </article>
+
+          <article class="service-card method-card reveal reveal-delay">
+            <span class="method-card__eyebrow">Метод 02</span>
+            <h3>Телеинспекция трубопроводов</h3>
+            <p>
+              Видеообследование помогает увидеть засоры, смещения, трещины и другие дефекты до ремонта,
+              а также проверить состояние сети после прочистки или замены участка.
+            </p>
+            <ul class="method-points">
+              <li>поиск дефекта без догадок и лишних раскопок</li>
+              <li>контроль состояния до и после работ</li>
+              <li>более точная смета и понятный план действий</li>
+            </ul>
+          </article>
+
+          <article class="service-card method-card reveal">
+            <span class="method-card__eyebrow">Метод 03</span>
+            <h3>Электромуфтовая и стыковая сварка ПНД труб</h3>
+            <p>
+              Применяем при сборке новых линий, ремонте отдельных участков и подключении трубопроводов.
+              Метод сварки выбираем по диаметру, условиям монтажа и типу участка.
+            </p>
+            <ul class="method-points">
+              <li>герметичное соединение без лишних переходов</li>
+              <li>подходит для водоснабжения и напорных участков</li>
+              <li>аккуратный монтаж под задачу конкретного объекта</li>
+            </ul>
+          </article>
+
+          <article class="service-card method-card reveal reveal-delay">
+            <span class="method-card__eyebrow">Метод 04</span>
+            <h3>Гидродинамическая прочистка канализации</h3>
+            <p>
+              Промываем трубопровод под давлением, чтобы удалить ил, жировые и плотные отложения,
+              восстановить проход и подготовить линию к инспекции или дальнейшему ремонту.
+            </p>
+            <ul class="method-points">
+              <li>очищает внутреннюю стенку по всей длине прохода</li>
+              <li>подходит как первый этап перед диагностикой</li>
+              <li>помогает быстро вернуть нормальную работу канализации</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="pricing">
       <div class="container pricing-layout">
         <div class="section-heading reveal">
           <span class="section-chip">Прайс</span>
-          <h2>Актуальные цены, которые вы просили заложить в сайт</h2>
+          <h2>Прозрачный прайс на основные услуги</h2>
           <p>
-            Прайс оформлен как самостоятельный блок, чтобы его можно было использовать и в рекламе,
-            и в коммерческих предложениях, и в мобильной версии сайта.
+            Ниже базовые ставки для первичной оценки бюджета. Итоговая стоимость зависит
+            от протяженности участка, доступа к месту работ и состояния сети.
           </p>
         </div>
 
@@ -269,8 +354,8 @@
           <span class="section-chip section-chip--light">Этапы</span>
           <h2>Как выстроена работа с заявкой</h2>
           <p>
-            Блок этапов сделан коротким и прикладным: без лишней теории,
-            только то, что важно клиенту перед стартом работ.
+            От первой заявки до выхода на объект держим понятный порядок работ,
+            согласований и сроков.
           </p>
         </div>
 
@@ -304,7 +389,7 @@
         <div class="section-heading reveal">
           <span class="section-chip">FAQ</span>
           <h2>Частые вопросы перед заказом</h2>
-          <p>Ответы собраны в коротком формате, чтобы не перегружать страницу и быстро закрывать сомнения клиента.</p>
+          <p>Коротко отвечаем на вопросы, которые чаще всего возникают перед диагностикой, прочисткой или заменой участка.</p>
         </div>
 
         <div class="faq-list reveal reveal-delay">
@@ -349,8 +434,8 @@
           <span class="section-chip">Контакты</span>
           <h2>Запросите расчет и обсудите задачу по вашему объекту</h2>
           <p>
-            Новый сайт уже подводит пользователя к заявке без лишних барьеров:
-            можно оставить контакты, выбрать услугу и получить обратную связь.
+            Оставьте контакты в форме или напишите удобным способом:
+            по телефону, в Telegram, MAX или на почту.
           </p>
 
           <div class="contact-meta">
@@ -416,9 +501,20 @@
               <textarea id="comment" name="comment" rows="4" placeholder="Что нужно сделать, какой объект и в какие сроки?"></textarea>
             </div>
 
+            <label class="consent-checkbox" for="privacy-consent">
+              <input id="privacy-consent" name="privacy-consent" type="checkbox" required>
+              <span>
+                Я ознакомлен(а) с
+                <a href="privacy-policy.html" target="_blank" rel="noreferrer">Политикой в отношении обработки персональных данных</a>
+                и
+                <a href="consent.html" target="_blank" rel="noreferrer">Согласием на обработку персональных данных</a>,
+                и даю согласие на обработку персональных данных.
+              </span>
+            </label>
+
             <button class="button button--primary button--full" type="submit">Отправить заявку</button>
             <p class="form-note" id="form-note" aria-live="polite">
-              Демо-форма для макета сайта. Перед публикацией можно подключить отправку в почту или CRM.
+              После отправки заявки мы свяжемся с вами удобным способом для уточнения деталей и расчета работ.
             </p>
           </form>
         </div>
@@ -426,9 +522,39 @@
     </section>
   </main>
 
+  <div class="mobile-dock" aria-label="Быстрые действия">
+    <a class="mobile-dock__item" href="tel:+79531781121">
+      <strong>Звонок</strong>
+      <span>Телефон</span>
+    </a>
+    <a class="mobile-dock__item" href="https://t.me/relaining_pro" target="_blank" rel="noreferrer">
+      <strong>TG</strong>
+      <span>Написать</span>
+    </a>
+    <a
+      class="mobile-dock__item"
+      href="https://web.max.ru/"
+      target="_blank"
+      rel="noreferrer"
+      data-max-link
+      data-copy-text="+7 953 178-11-21"
+    >
+      <strong>MAX</strong>
+      <span>Открыть</span>
+    </a>
+    <a class="mobile-dock__item mobile-dock__item--primary" href="#contacts">
+      <strong>Заявка</strong>
+      <span>Форма</span>
+    </a>
+  </div>
+
   <footer class="site-footer">
     <div class="container footer-shell">
-      <p>© <span id="year"></span> ГидроКонтур. Лендинг для услуг по водоснабжению и трубопроводам.</p>
+      <p>© <span id="year"></span> ГидроКонтур. Инженерные работы по водоснабжению и трубопроводам.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Политика обработки персональных данных</a>
+        <a href="consent.html">Согласие на обработку персональных данных</a>
+      </div>
       <a href="#top">Наверх</a>
     </div>
   </footer>
